@@ -1,38 +1,26 @@
 # Diabetes Prediction Model
 
-This project trains a machine learning model to predict diabetes based on various health indicators.
+🔗 **Live App:** [https://diabetespredictiondeployed.streamlit.app/](https://diabetespredictiondeployed.streamlit.app/)
 
-## Features
-- Preprocessing of numeric and categorical data
-- Feature scaling using MinMaxScaler
-- One-hot encoding for categorical variables
-- Model training and evaluation
-- Function to predict diabetes probability from user input
+This project builds and deploys a machine learning model to predict the likelihood of diabetes based on user-provided health indicators.
 
-## Installation
+---
+
+## 🚀 Features
+
+- Scales numeric features using `MinMaxScaler`
+- Encodes categorical features with `OneHotEncoder`
+- Accepts user input through a Streamlit interface
+- Predicts diabetes risk using a trained model
+- Displays prediction result and probability score
+
+---
+
+## 🛠️ Installation
+
 Clone the repository and install dependencies:
 
 ```bash
+git clone https://github.com/your-username/diabetes-prediction.git
+cd diabetes-prediction
 pip install -r requirements.txt
-Usage
-python
-Copy
-Edit
-new_input = {
-    'gender': 'Male',
-    'age': 45.0,
-    'hypertension': 0,
-    'heart_disease': 0,
-    'smoking_history': 'current',
-    'bmi': 28.5,
-    'HbA1c_level': 5.8,
-    'blood_glucose_level': 180
-}
-predict_input(new_input)
-Model Output
-The model returns a tuple:
-
-0 or 1 (Indicating No Diabetes or Diabetes)
-Probability Score
-If 0, return False; otherwise, return True.
-```
